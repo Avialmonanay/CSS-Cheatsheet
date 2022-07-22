@@ -1,0 +1,36 @@
+:root{
+--boxcolor: rgb(214, 3, 168);
+--boxradius: 10px;
+}
+
+header{
+    background-color: var(--boxcolor);
+    height: 75px;
+    margin: 20px;
+}
+
+html{
+    background-color: black;
+    color: rgb(0, 247, 255);
+}
+
+.container { display: flex; flex-wrap: wrap; }
+.box-top{
+  flex-grow: 1;
+  max-width: 33%;
+  margin: 10px 20px 10px 20px;
+  height: 300px;
+  border-color: var(--boxcolor);
+  border-width: 10px;
+  border-style: dotted;
+ }
+ .box-bottom{
+    flex-grow: 1;
+    max-width: 33%;
+    margin: 10px 20px 10px 20px;
+    height: 400px;
+    border-color: var(--boxcolor);
+    border-width: 10px;
+    border-style: dotted;
+    
+   }
