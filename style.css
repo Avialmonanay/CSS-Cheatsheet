@@ -1,36 +1,97 @@
-:root{
---boxcolor: rgb(214, 3, 168);
---boxradius: 10px;
+:root {
+    --boxcolor: rgb(214, 3, 168);
+    --boxradius: 5px;
+    --headerborder: rgb(214, 3, 168);
+    --background:  rgb(46, 44, 44);
+    --borderradius: 10px;
 }
 
-header{
-    background-color: var(--boxcolor);
+header {
     height: 75px;
     margin: 20px;
 }
 
-html{
-    background-color: black;
+html {
+    background-color: var(--background);
     color: rgb(0, 247, 255);
 }
 
-.container { display: flex; flex-wrap: wrap; }
-.box-top{
-  flex-grow: 1;
-  max-width: 33%;
-  margin: 10px 20px 10px 20px;
-  height: 300px;
-  border-color: var(--boxcolor);
-  border-width: 10px;
-  border-style: dotted;
- }
- .box-bottom{
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-top {
+    flex-grow: 1;
+    max-width: 33%;
+    margin: 30px 20px 30px 20px;
+    height: 300px;
+    border-color: var(--boxcolor);
+    border-width: var(--boxradius);
+    border-style: groove;
+    border-radius: var(--borderradius);
+
+}
+
+.box-bottom {
     flex-grow: 1;
     max-width: 33%;
     margin: 10px 20px 10px 20px;
     height: 400px;
     border-color: var(--boxcolor);
-    border-width: 10px;
-    border-style: dotted;
+    border-width: var(--boxradius);
+    border-style: groove;
+    border-radius: var(--borderradius);
+
+}
+
+.box-top header {
+    text-align: center;
+    font-size: 45px;
+    position: relative;
+    bottom: 50px;
+    border-color: var(--headerborder);
+    border-width: var(--boxradius);
+    border-style: groove;
+    background: var(--background);
+    border-radius: var(--borderradius);
     
-   }
+}
+
+.box-bottom header {
+    text-align: center;
+    font-size: 45px;
+    position: relative;
+    bottom: 50px;
+    border-color: var(--headerborder);
+    border-width: var(--boxradius);
+    border-style: groove;
+    background: var(--background);
+    border-radius: var(--borderradius);
+}
+
+.box-top h3 {
+    text-align: center;
+    font-size: 30px;
+    background-color: aqua;
+    position: relative;
+    bottom: 18%;
+}
+
+.box-bottom h3 {
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 15%;
+}
+
+.box-top p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.box-bottom p {
+    text-align: center;
+    font-size: 30px;
+
+}
