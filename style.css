@@ -6,9 +6,17 @@
     --borderradius: 10px;
 }
 
-header {
+main {
+    margin: 2%;
+    text-align: center;
+    font-size:40px
+}
+
+header{
     height: 75px;
     margin: 20px;
+    padding-left: 5%;
+    padding-top: 3%;
 }
 
 html {
@@ -21,6 +29,12 @@ html {
     flex-wrap: wrap;
 }
 
+nav{
+    text-align: center;
+    margin: 2%;
+}
+
+
 .box-top {
     flex-grow: 1;
     max-width: 33%;
@@ -30,7 +44,6 @@ html {
     border-width: var(--boxradius);
     border-style: groove;
     border-radius: var(--borderradius);
-
 }
 
 .box-bottom {
@@ -46,7 +59,6 @@ html {
 }
 
 .box-top header {
-    text-align: center;
     font-size: 45px;
     position: relative;
     bottom: 50px;
@@ -55,11 +67,9 @@ html {
     border-style: groove;
     background: var(--background);
     border-radius: var(--borderradius);
-    
 }
 
 .box-bottom header {
-    text-align: center;
     font-size: 45px;
     position: relative;
     bottom: 50px;
@@ -94,4 +104,8 @@ html {
     text-align: center;
     font-size: 30px;
 
+}
+
+
+@media screen and (max-width: 768px) {
 }
